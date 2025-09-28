@@ -17,7 +17,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=shivanshsrivastav0208&show_icons=true&theme=tokyonight" alt="Aryan Srivastava's GitHub stats" width="400" height="160"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aryan-Srivastava&theme=dark)" alt="Aryan Srivastava's GitHub streak" width="400" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api?username=shivanshsrivastav0208&show_icons=true&theme=tokyonight" alt="Shivansh Srivastav's GitHub stats" width="400" height="160"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=shivanshsrivastav0208&theme=dark)" alt="Shivansh Srivastav's GitHub streak" width="400" height="160"/>
 
 
 </div>
