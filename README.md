@@ -9,8 +9,6 @@
 - 🌱 I’m currently learning MERN stack.
 - 🎯 Interested in learning and contributing to open source projects in AI/ML.
 
-<br/>
-
 ***
 
 # Stats: ✨
