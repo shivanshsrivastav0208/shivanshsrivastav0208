@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 10 - Advanced Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #fafafa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #111;
+            color: white;
+            padding: 1rem 3%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-center a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-size: 1.05rem;
+            transition: 0.3s;
+        }
+
+        .nav-center a:hover {
+            color: #aff; 
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.05rem;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        /* Responsive Navbar */
+        @media(max-width: 768px) {
+
+            .hamburger {
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2rem;
+            }
+
+            .nav-center {
+                display: none;
+                width: 100%;
+                background: #333;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                border-top: 1px solid #444;
+                z-index: 9;
+            }
+
+            #menu-toggle:checked ~ .nav-center {
+                display: flex;
+                gap: 1.2rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 3rem;
+            text-align: center;
+            background: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav class="nav-center">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+        <a href="#">Cart</a>
+        <a href="#">Login</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Welcome to ShopEase!</h1>
+    <p>Your one-stop destination for all shopping needs.</p>
+</section>
+
+</body>
+</html>
