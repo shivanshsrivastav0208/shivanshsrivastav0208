@@ -1,0 +1,44 @@
+<!--LEVEL 5: Combo Power (Center Everything) 
+       Goal: Center all boxes both horizontally & vertically. 
+       Challenge Code: 
+.container { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 250px; 
+  background-color: lightgray; 
+} 
+    Output: All boxes appear perfectly centered — this is one of the most common real-world uses of 
+Flexbox! 
+      Used in: loaders, modals, login forms, hero banners. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Combo Power: Center Everything</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            background-color: lightgray;
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

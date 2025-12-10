@@ -1,0 +1,44 @@
+<!---LEVEL 4: Vertical Alignment (align-items) Goal: Align items vertically (cross-axis). 
+       Try this: 
+.container { 
+  display: flex; 
+  align-items: _______; /* Try flex-start, center, flex-end, stretch, baseline */ 
+  height: 200px; 
+} 
+Value Effect 
+flex-start Items stick to top 
+center Items vertically centered 
+flex-end Items stick to bottom 
+stretch Items fill full height 
+baseline Align text baselines 
+    Think: The cross axis is vertical when direction = row. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Align Items Master</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center; /* Change this to flex-start, center, flex-end, stretch, baseline */
+            height: 200px;
+            border: 2px solid black; /* Added border to visualize container height */
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

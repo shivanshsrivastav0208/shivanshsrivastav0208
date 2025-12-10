@@ -1,0 +1,50 @@
+<!---LEVEL 3: Horizontal Alignment (justify-content) 
+       Goal: Position boxes horizontally in different ways. 
+       Try each value one by one: 
+.container { 
+  display: flex; 
+  justify-content: _______; /* Try flex-start, center, flex-end, space-between, space-around, space
+evenly */ 
+} 
+Value Visual Meaning Hint 
+flex-start                    (left side) Default 
+center —                  — (centered) Middle alignment 
+flex-end                      (right side) Right side 
+space-between       —      —       No gaps at edges 
+space-around —      —      —      — Equal outer space 
+space-evenly       —      —       Equal space everywhere-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Justify Content Master</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around; /* Change this to flex-start, center, flex-end, space-between, space-around, space-evenly */
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            margin: 5px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="container">
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
