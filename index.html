@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first HTML Page</title>
+  <meta charset="UTF-8">
+  <title>Even or Odd Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>Name: shivansh srivastav</h1>
-    <h1>Father's Name: amar kant srivastav</h1> 
-    <h1>Mother's Name: anupama</h1>
-    <h2>Branch: Computer Science & Engineering</h2>
-    <h2>Section: 27 </h2>
-    <p>subhash nagar<br> utraula<br> balrampur<br></p>
+
+  <div class="container">
+    <h2>Even or Odd Checker</h2>
+
+    <input type="number" id="num" placeholder="Enter a number">
+
+    <button onclick="checkNumber()">Check</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkNumber() {
+      let num = document.getElementById("num").value;
+      let result = document.getElementById("result");
+
+      if (num === "") {
+        result.innerHTML = "Please enter a number!";
+        return;
+      }
+
+      num = parseInt(num);
+
+      if (num % 2 === 0) {
+        result.innerHTML = num + " is EVEN number";
+      } else {
+        result.innerHTML = num + " is ODD number";
+      }
+    }
+  </script>
+
 </body>
 </html>
